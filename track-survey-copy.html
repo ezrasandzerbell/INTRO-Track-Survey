@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Computer Programming Track Suggester</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/scripts-copy.js"></script>
+</head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Epicodus Track Suggester</h1>
+        <p>Which Programming Language Will Be Best For You?</p>
+      </div>
+
+      <p class="introduction">Welcome! This short quiz will take you through a series of questions to evaluate the track at Epicodus that best suits your personality and interests. The following three options are available during Portland's winter semester of 2016/2017. Please review the following questions and answer them to the best of your ability.</p>
+
+      <div class="row">
+
+        <div class="col-md-4">
+          <p class="introColumns">Ruby/Rails</p>
+          <img src="img/rubyIcon.png" alt="Ruby image" class="imageSizeSmall" />
+        </div>
+
+        <div class="col-md-4">
+          <p class="introColumns">CSS/Design</p>
+          <img src="img/cssIcon.jpg" alt="CSS image" class="imageSizeSmall" />
+        </div>
+
+        <div class="col-md-4">
+          <p class="introColumns">C#.NET</p>
+          <img src="img/cSharpIcon.png" alt="Ruby image" class="imageSizeSmall" />
+        </div>
+
+      </div>
+
+
+      <form id="test">
+
+
+        <label for="biztype">What kind of business would you prefer to work for?</label>
+        <select id="biztype">
+          <option value="corporate">Corporate (large)</option>
+          <option value="startup">Startup (small)</option>
+        </select>
+
+<!-- new question !-->
+
+        <label for="biztype">Which personality type best defines you?</label>
+        <select id="personality">
+          <option value="traditional">Pragmatic and Traditional</option>
+          <option value="progressive">Imaginative and Progressive</option>
+        </select>
+
+<!-- new question !-->
+
+        <label for="biztype">Would you prefer to work on Front or Back end?</label>
+        <select id="frontback">
+          <option value="frontend">Front End (User Interface)</option>
+          <option value="backend">Back End (Business Logic)</option>
+        </select>
+
+<!-- new question !-->
+
+        <label for="biztype">How long do you want to stay with a single company?</label>
+        <select id="lengthofstay">
+          <option value="long">Longterm (I want job stability)</option>
+          <option value="flexible">Flexible (I enjoy job variety)</option>
+        </select>
+
+<!-- new question !-->
+
+        <label for="biztype">Do you prefer working with coding or visual design?</label>
+        <select id="codevisual">
+          <option value="coding">Coding</option>
+          <option value="visualdesign">Visual Design</option>
+        </select>
+
+<!-- new question !-->
+
+        <label for="biztype">Would you prefer to work on website layout or mobile applications?</label>
+        <select id="webmobile">
+          <option value="weblayout">Website layout</option>
+          <option value="mobileapps">Mobile Apps</option>
+        </select>
+
+<!-- end of questions !-->
+
+      </form>
+
+      <button type="submit" class="btn">Find My Track!</button>
+
+      <div id="cSharp">
+        <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
+      </div>
+
+      <div id="ruby">
+        <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
+      </div>
+
+      <div id="css">
+        <img src="img/cssTrack.png" alt="CSS Logo" class="imageSizeLarge"/>
+      </div>
+
+      <div id="twoOptions">
+        <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
+        <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
+      </div>
+
+    </div>
+  </body>
+</html>

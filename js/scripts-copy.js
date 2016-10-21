@@ -1,9 +1,13 @@
-    var biztype = $("input:radio[name=biztype]:checked").val();
-    var personality = $("input:radio[name=personality]:checked").val();
-    var frontback = $("input:radio[name=frontback]:checked").val();
-    var lengthofstay = $("input:radio[name=lengthofstay]:checked").val();
-    var codevisual = $("input:radio[name=codevisual]:checked").val();
-    var webmobile = $("input:radio[name=webmobile]:checked").val();
+    var biztype = $("select#biztype").val();
+    var personality = $("select#personality").val();
+    var frontback = $("select#frontback").val();
+    var lengthofstay = $("select#lengthofstay").val();
+    var codevisual = $("select#codevisual").val();
+    var webmobile = $("select#webmobile").val();
+
+    var age = parseInt($("input#age").val());
+        var gender = $("select#gender").val();
+
 
 
 $(document).ready(function() {
@@ -26,13 +30,13 @@ debugger;
     } else if (biztype === "startup" && personality === "progressive" && frontback === "backend" ||
         biztype === "startup" && personality === "progressive" && lengthofStay === "flexible" ||
         biztype === "startup" && personality === "progressive" && codeVisual === "coding" ||
-        biztype === "startup" && personality === "progressive" && webMobile === "mobileApps" ||
+        biztype === "startup" && personality === "progressive" && webMobile === "mobileapps" ||
         personality === "progressive" && frontback === "backend" && lengthofstay === "flexible" ||
         personality === "progressive" && frontback === "backend" && codevisual === "coding" ||
-        personality === "progressive" && frontback === "backend" && webmobile === "mobileApps" ||
+        personality === "progressive" && frontback === "backend" && webmobile === "mobileapps" ||
         frontback === "backend" && lengthofstay === "flexible" &&  codevisual === "coding" ||
-        frontback === "backend" && lengthofstay === "flexible" &&  webmobile === "mobileApps"  ||
-        lengthofstay === "flexible" &&  codevisual === "coding" && webmobile === "mobileApps") {
+        frontback === "backend" && lengthofstay === "flexible" &&  webmobile === "mobileapps"  ||
+        lengthofstay === "flexible" &&  codevisual === "coding" && webmobile === "mobileapps") {
 
         $('#ruby').show();
         $('#cSharp').hide();
