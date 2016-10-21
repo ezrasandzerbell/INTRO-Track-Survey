@@ -30,6 +30,10 @@
     list-style-type: none;
 }
 
+.centerText {
+  margin-left: 25%;
+}
+
 
 h2 {
   font-size: 25px;
@@ -84,8 +88,9 @@ h3 {
 .introduction {
   font-size: 17px;
   font-family: sans-serif;
-  margin: 30px 30px;
+  margin-right: 20%;
   text-align: justify;
+  font-style: italic;
 }
 
 .introColumns {
@@ -101,5 +106,5 @@ h3 {
   border: 1px solid black ;
   margin-bottom: 50px;
   margin-top: 40px;
-  margin-left: 30%
+  margin-left: 25%
 }
