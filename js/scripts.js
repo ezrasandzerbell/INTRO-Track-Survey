@@ -1,84 +1,58 @@
+debugger;
+
 $(document).ready(function() {
   $("form#survey").submit(function() {
-    event.preventDefault();
-    var bizType = $("input:radio[name=bizType]:checked").val();
+
+    var biztype = $("input:radio[name=biztype]:checked").val();
     var personality = $("input:radio[name=personality]:checked").val();
-    var frontBack = $("input:radio[name=frontBack]:checked").val();
-    var lengthOfStay = $("input:radio[name=lengthOfStay]:checked").val();
-    var codeVisual = $("input:radio[name=codeVisual]:checked").val();
-    var webMobile = $("input:radio[name=webMobile]:checked").val();
+    var frontback = $("input:radio[name=frontback]:checked").val();
+    var lengthofstay = $("input:radio[name=lengthofstay]:checked").val();
+    var codevisual = $("input:radio[name=codevisual]:checked").val();
+    var webmobile = $("input:radio[name=webmobile]:checked").val();
 
-//      The following are the paramaters defined for the C# track
+    if (biztype === "corporate" && personality === "traditional" && frontback === "backend" ||
+        biztype === "corporate" && personality === "traditional" && lengthofstay === "long" ||
+        biztype === "corporate" && personality === "traditional" && codevisual === "coding" ||
+        personality === "traditional" && frontback === "backend" && lengthofstay === "long" ||
+        personality === "traditional" && frontback === "backend" && codevisual === "coding" ||
+        frontback === "backend" && lengthofstay === "long" &&  codevisual === "coding") {
 
-//      bizType === corporate
-//      personality === traditional
-//      frontBack === backend
-//      lengthOfStay === long
-//      codeVisual === coding
-//      webMobile === n/a
+        $('#cSharp').show();
+        $('#ruby').hide();
+        $('css').hide();
+        $('#twoOptions').hide();
 
-        if (bizType === "corporate" && personality === "traditional" && frontBack === "backend" ||
-            bizType === "corporate" && personality === "traditional" && lengthOfStay === "long" ||
-            bizType === "corporate" && personality === "traditional" && codeVisual === "coding" ||
-            personality === "traditional" && frontBack === "backend" && lengthOfStay === "long" ||
-            personality === "traditional" && frontBack === "backend" && codeVisual === "coding" ||
-            frontBack === "backend" && lengthOfStay === "long" &&  codeVisual === "coding" ) {
+    } else if (biztype === "startup" && personality === "progressive" && frontback === "backend" ||
+        biztype === "startup" && personality === "progressive" && lengthofStay === "flexible" ||
+        biztype === "startup" && personality === "progressive" && codeVisual === "coding" ||
+        biztype === "startup" && personality === "progressive" && webMobile === "mobileApps" ||
+        personality === "progressive" && frontback === "backend" && lengthofstay === "flexible" ||
+        personality === "progressive" && frontback === "backend" && codevisual === "coding" ||
+        personality === "progressive" && frontback === "backend" && webmobile === "mobileApps" ||
+        frontback === "backend" && lengthofstay === "flexible" &&  codevisual === "coding" ||
+        frontback === "backend" && lengthofstay === "flexible" &&  webmobile === "mobileApps"  ||
+        lengthofstay === "flexible" &&  codevisual === "coding" && webmobile === "mobileApps") {
 
-            $('#cSharp').show();
-            $('#ruby').hide();
-            $('css').hide();
-            $('#twoOptions').hide();;
+        $('#ruby').show();
+        $('#cSharp').hide();
+        $('css').hide();
+        $('#twoOptions').hide();
 
-//      End of C# track suggestion branch
-//
-//      ---------------------------------
-//
-//      The following are parameters defined for the Ruby-Rails track
-//
-//      bizType === startup
-//      personality === progressive
-//      frontBack === backend
-//      lengthOfStay === flexible
-//      codeVisual === coding
-//      webMobile === mobileApps
+    } else if (frontBack === "frontend" || codeVisual === "visualdesign") {
 
+        $('#css').show();
+        $('#cSharp').hide();
+        $('#ruby').hide();
+        $('#twoOptions').hide();
 
-} else  if (bizType === "startup" && personality === "progressive" && frontBack === "backend" ||
-            bizType === "startup" && personality === "progressive" && lengthOfStay === "flexible" ||
-            bizType === "startup" && personality === "progressive" && codeVisual === "coding" ||
-            bizType === "startup" && personality === "progressive" && webMobile === "mobileApps"
-            personality === "progressive" && frontBack === "backend" && lengthOfStay === "flexible" ||
-            personality === "progressive" && frontBack === "backend" && codeVisual === "coding" ||
-            personality === "progressive" && frontBack === "backend" && webMobile === "mobileApps"  ||
-            frontBack === "backend" && lengthOfStay === "flexible" &&  codeVisual === "coding" ||
-            frontBack === "backend" && lengthOfStay === "flexible" &&  webMobile === "mobileApps"  ||
-            lengthOfStay === "flexible" &&  codeVisual === "coding" && webMobile === "mobileApps" ||
-            ) {
-
-            $('#ruby').show();
-            $('#cSharp').hide();
-            $('css').hide();
-            $('#twoOptions').hide();;
-//      End of Ruby track suggestion branch
-//
-//      ---------------------------------
-//
-//      The following are parameters defined for the CSS-Design track
-//
-//      frontBack === frontend
-//      codeVisual === visualDesign
-
-
-    } else if (frontBack === "frontEnd" || codeVisual === "visualDesign") {
-      $('#css').show();
-      $('#cSharp').hide();
-      $('#ruby').hide();;
-      $('#twoOptions').hide();;
     } else {
-      $('#twoOptions').show();
-      $('#css').hide();
-      $('#cSharp').hide();
-      $('#ruby').hide();;
+
+        $('#twoOptions').show();
+        $('#css').hide();
+        $('#cSharp').hide();
+        $('#ruby').hide();
     }
+
+    event.preventDefault();
   });
 });

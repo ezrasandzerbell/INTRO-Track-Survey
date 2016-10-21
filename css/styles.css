@@ -1,16 +1,26 @@
-#jarjar, #r2d2, #luke, #sith, #darth, #kylo {
+#cSharp, #ruby, #css, #twoOptions {
   display: none;
 }
 
-.imageSize {
-  width: 300px;
-  margin: 0 30%;
+.imageSizeSmall {
+  width: 250px;
+  margin: 50px 100px 200px;
+}
+
+.imageSizeLarge {
+  width: 500px;
+  margin: 0 40%;
 }
 
 .introduction {
   font-size: 20px;
   font-family: sans-serif;
-  margin: 0% 30%;
+}
+
+.introColumns {
+  font-size: 30px;
+  font-family: sans-serif;
+  margin: 75px 150px 0px;
 }
 
 #introUL {

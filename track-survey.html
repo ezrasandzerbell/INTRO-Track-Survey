@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Star Wars Personality Test</title>
+  <title>Computer Programming Track Suggester</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.1.1.js"></script>
@@ -10,34 +10,43 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Computer Programming Track Suggester</h1>
+        <h1>Epicodus Track Suggester</h1>
         <p>Which Programming Language Will Be Best For You?</p>
       </div>
 
-      <p class="introduction">Welcome! This short quiz will take you through a series of questions to evaluate the track at Epicodus that best suits your personality and interests. The following three options are available during Portland's winter semester of 2016/2017:</p>
+      <p class="introduction">Welcome! This short quiz will take you through a series of questions to evaluate the track at Epicodus that best suits your personality and interests. The following three options are available during Portland's winter semester of 2016/2017. Please review the following questions and answer them to the best of your ability.</p>
 
-      <ul id="introUL">
-        <li>Ruby/Rails</li>
-        <li>CSS/Design</li>
-        <li>C#/.NET</li>
-      </ul>
+      <div class="row">
 
-      <p class="introduction">Please review the following questions and answer them to the best of your ability.</p>
+        <div class="col-md-4">
+          <p class="introColumns">Ruby/Rails</p>
+          <img src="img/rubyIcon.png" alt="Ruby image" class="imageSizeSmall" />
+        </div>
 
+        <div class="col-md-4">
+          <p class="introColumns">CSS/Design</p>
+          <img src="img/cssIcon.jpg" alt="CSS image" class="imageSizeSmall" />
+        </div>
 
+        <div class="col-md-4">
+          <p class="introColumns">C#.NET</p>
+          <img src="img/cSharpIcon.png" alt="Ruby image" class="imageSizeSmall"/>
+        </div>
+
+      </div>
 
       <h2>What kind of business would you prefer to work for?</h2>
 
       <form id="survey">
       <div class="radio">
         <label>
-          <input type="radio" name="bizType" value="corporate" checked>
+          <input type="radio" name="biztype" value="corporate" checked>
           Corporate (large)
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="bizType" value="startup">
+          <input type="radio" name="biztype" value="startup">
           Startup (small)
         </label>
       </div>
@@ -60,91 +69,92 @@
 
 <!-- new question !-->
 
-<h2>Would you prefer to work on Front or Back end?</h2>
-<div class="radio">
-  <label>
-    <input type="radio" name="frontBack" value="frontend" checked>
-    Front End (User Interface)
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="frontBack" value="backend">
-    Back End (Business Logic)
-  </label>
-</div>
+      <h2>Would you prefer to work on Front or Back end?</h2>
+      <div class="radio">
+        <label>
+          <input type="radio" name="frontback" value="frontend" checked>
+          Front End (User Interface)
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="frontback" value="backend">
+          Back End (Business Logic)
+        </label>
+      </div>
 
-<!-- new question !-->
+      <!-- new question !-->
 
-<h2>How long do you want to stay with a single company?</h2>
-<div class="radio">
-  <label>
-    <input type="radio" name="lengthOfStay" value="long" checked>
-    Longterm (I want job stability)
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="lengthOfStay" value="flexible">
-    Flexible (I enjoy job variety)
-  </label>
-</div>
+      <h2>How long do you want to stay with a single company?</h2>
+      <div class="radio">
+        <label>
+          <input type="radio" name="lengthofstay" value="long" checked>
+          Longterm (I want job stability)
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="lengthofstay" value="flexible">
+          Flexible (I enjoy job variety)
+        </label>
+      </div>
 
-<!-- new question !-->
+      <!-- new question !-->
 
-<h2>Do you prefer working with coding or visual design</h2>
-<div class="radio">
-  <label>
-    <input type="radio" name="codeVisual" value="coding" checked>
-    Coding
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="codeVisual" value="visualDesign">
-    Visual design
-  </label>
-</div>
+      <h2>Do you prefer working with coding or visual design</h2>
+      <div class="radio">
+        <label>
+          <input type="radio" name="codevisual" value="coding" checked>
+          Coding
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="codevisual" value="visualDesign">
+          Visual design
+        </label>
+      </div>
 
-<!-- new question !-->
+      <!-- new question !-->
 
-<h2>Would you prefer to work on website layout or mobile applications?</h2>
-<div class="radio">
-  <label>
-    <input type="radio" name="webMobile" value="webLayout" checked>
-    Website layout
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="webMobile" value="mobileApps">
-    Mobile Apps
-  </label>
-</div>
+      <h2>Would you prefer to work on website layout or mobile applications?</h2>
+      <div class="radio">
+        <label>
+          <input type="radio" name="webmobile" value="webLayout" checked>
+          Website layout
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="webmobile" value="mobileApps">
+          Mobile Apps
+        </label>
+      </div>
 
 <!-- end of questions !-->
 
-
+      </form>
 
 
 
       <button type="submit" class="btn">Find My Track!</button>
 
       <div id="cSharp">
-        <img src="img/cSharp.jpg" alt="C Sharp Logo" class="imageSize"/>
+        <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
       </div>
 
       <div id="ruby">
-        <img src="img/ruby.jpg" alt="Ruby Logo" class="imageSize"/>
+        <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
       </div>
 
       <div id="css">
-        <img src="img/css.png" alt="CSS Logo" class="imageSize"/>
+        <img src="img/cssTrack.png" alt="CSS Logo" class="imageSizeLarge"/>
       </div>
 
-  //    <div id="output">
-
-      </form>
+      <div id="twoOptions">
+        <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
+        <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
+      </div>
 
     </div>
   </body>
