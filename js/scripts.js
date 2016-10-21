@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-console.log();
-
   $("form#survey").submit(function(event) {
+
+    var nameInput = $("input#name").val();
 
     var biztype = $("input:radio[name=biztype]:checked").val();
     var personality = $("input:radio[name=personality]:checked").val();
@@ -10,7 +10,6 @@ console.log();
     var lengthofstay = $("input:radio[name=lengthofstay]:checked").val();
     var codevisual = $("input:radio[name=codevisual]:checked").val();
     var webmobile = $("input:radio[name=webmobile]:checked").val();
-    var nameInput = $("input#name").val();
 
     $(".name").text(nameInput);
 
