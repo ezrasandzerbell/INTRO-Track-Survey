@@ -14,6 +14,45 @@
   display: none;
 }
 
+#centerIt {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#name {
+  width: 80%
+}
+
+h2 {
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-family: 'Arimo', sans-serif;
+  font-size: 30px;
+}
+
+.surveyBox {
+  border: 1px solid lightblue ;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 110px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #eafffd;
+}
+
+.buttonText {
+  font-size: 18px;
+}
+
+.jumbotron {
+  background-color: lightblue;
+  padding: 20px;
+}
+
 .resultTitle {
   text-align: center;
 }
@@ -24,31 +63,38 @@
   margin-bottom: 50px;
 }
 
+.form-control {
+  margin-bottom: 40px;
+}
+
 .imageSizeLarge {
-  width: 480px;
+  width: 70%;
   margin-top: 30px;
+  margin: 0% 15%;
 }
 
 .introduction {
-  font-size: 18px;
+  font-size: 17px;
   font-family: sans-serif;
   margin: 30px 30px;
   text-align: justify;
 }
 
 .introColumns {
-  font-size: 30px;
+  font-size: 25px;
   font-family: sans-serif;
-  margin: 10px 0px 0px 55px;
+  margin: 10px 0px 20px 65px;
 }
 
 .btn {
-  margin-bottom: 100px;
-  margin-left: 35%
-}
+  width: 200px;
+  font-size: 25px;
+  background-color: #d9dce0;
+  border: 1px solid black ;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-left: 30%
 
-.centerIt {
-  margin-left: 150px
 }
 
 #introUL {

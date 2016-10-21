@@ -10,6 +10,9 @@ console.log();
     var lengthofstay = $("input:radio[name=lengthofstay]:checked").val();
     var codevisual = $("input:radio[name=codevisual]:checked").val();
     var webmobile = $("input:radio[name=webmobile]:checked").val();
+    var nameInput = $("input#name").val();
+
+    $(".name").text(nameInput);
 
     if (frontback === "frontend" || codevisual === "visualdesign") {
 

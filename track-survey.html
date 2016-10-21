@@ -4,6 +4,7 @@
   <title>Computer Programming Track Suggester</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Roboto" rel="stylesheet">
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/scripts.js"></script>
 </head>
@@ -14,9 +15,9 @@
         <p>Which Programming Language Will Be Best For You?</p>
       </div>
 
-      <p class="introduction">Welcome! This short quiz will take you through a series of questions to evaluate the track at Epicodus that best suits your personality and interests. The following three options are available during Portland's winter semester of 2016/2017:</p>
+      <p class="introduction">This short quiz will take you through a series of questions and evaluate the Epicodus track that best suits your personality. The following three options are available during Portland's winter semester of 2016/2017:</p>
 
-      <div class="row">
+      <div class="row" id="centerIt">
 
         <div class="col-md-4">
           <p class="introColumns">Ruby/Rails</p>
@@ -35,153 +36,142 @@
 
       </div>
 
-      <form id="survey" class="centerIt">
+        <form id="survey">
+        <div class="surveyBox">
 
-      <h2>What kind of business would you prefer to work for?</h2>
+          <div class="form-group">
+            <label for="name"><h3>Please enter your first name:</h3></label>
+            <input id="name" class="form-control" type="text">
+          </div>
 
-        <div class="radio">
-          <label>
-            <input type="radio" name="biztype" value="corporate" checked>
-            Corporate (large)
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="biztype" value="startup">
-            Startup (small)
-          </label>
-        </div>
+          <h2>What kind of business would you prefer to work for?</h2>
 
-<!-- new question !-->
+          <div class="radio">
+            <label>
+              <input type="radio" name="biztype" value="corporate" checked>
+              <p class="buttonText">Corporate (large)</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="biztype" value="startup">
+              <p class="buttonText">Startup (small)</p>
+            </label>
+          </div>
 
-      <h2>Which personality type best defines you?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="personality" value="traditional" checked>
-          Pragmatic and Traditional
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="personality" value="progressive">
-          Imaginative and Progressive
-        </label>
-      </div>
+  <!-- new question !-->
 
-<!-- new question !-->
+          <h2>Which personality type best defines you?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="personality" value="traditional" checked>
+              <p class="buttonText">Pragmatic and Traditional</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="personality" value="progressive">
+              <p class="buttonText">Imaginative and Progressive</p>
+            </label>
+          </div>
 
-      <h2>Would you prefer to work on Front or Back end?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="frontback" value="frontend" checked>
-          Front End (User Interface)
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="frontback" value="backend">
-          Back End (Business Logic)
-        </label>
-      </div>
+    <!-- new question !-->
 
-      <!-- new question !-->
+          <h2>Would you prefer to work on Front or Back end?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="frontback" value="frontend" checked>
+              <p class="buttonText">Front End (User Interface)</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="frontback" value="backend">
+              <p class="buttonText">Back End (Business Logic)</p>
+            </label>
+          </div>
 
-      <h2>How long do you want to stay with a single company?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="lengthofstay" value="long" checked>
-          Longterm (I want job stability)
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="lengthofstay" value="flexible">
-          Flexible (I enjoy job variety)
-        </label>
-      </div>
+          <!-- new question !-->
 
-      <!-- new question !-->
+          <h2>How long do you want to stay with a single company?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="lengthofstay" value="long" checked>
+              <p class="buttonText">Longterm (I want job stability)</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="lengthofstay" value="flexible">
+              <p class="buttonText">Flexible (I enjoy job variety)</p>
+            </label>
+          </div>
 
-      <h2>Do you prefer working with coding or visual design</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="codevisual" value="coding" checked>
-          Coding
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="codevisual" value="visualdesign">
-          Visual design
-        </label>
-      </div>
+          <!-- new question !-->
 
-      <!-- new question !-->
+          <h2>Do you prefer working with coding or visual design?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="codevisual" value="coding" checked>
+              <p class="buttonText">Coding</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="codevisual" value="visualdesign">
+              <p class="buttonText">Visual design</p>
+            </label>
+          </div>
 
-      <h2>Do you want to work on websites or mobile applications?</h2>
-      <div class="radio">
-        <label>
-          <input type="radio" name="webmobile" value="weblayout" checked>
-          Website layout
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="webmobile" value="mobileapps">
-          Mobile Apps
-        </label>
-      </div>
+          <!-- new question !-->
+
+          <h2>Do you want to work on websites or mobile applications?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="webmobile" value="weblayout" checked>
+              <p class="buttonText">Website layout</p>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="webmobile" value="mobileapps">
+              <p class="buttonText">Mobile Apps</p>
+            </label>
+          </div>
 
 <!-- end of questions !-->
 
-      <button type="submit" class="btn">Find My Track!</button>
+          <button type="submit" class="btn">Find My Track!</button>
+
+        </div>
+      </div>
 
       <div id="cSharp">
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-6">
-          <h1 class="resultTitle">Congrats!</h1>
-          <h2 class="resultTitle">Your ideal track is C# and .Net</h2>
-          <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
-          </div>
-        </div>
+        <h1 class="resultTitle">Congrats <span class="name"></span>!</h1>
+        <h2 class="resultTitle">You got C# and .Net</h2>
+        <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
       </div>
 
       <div id="ruby">
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-6">
-          <h1 class="resultTitle">Congrats!</h1>
-          <h2 class="resultTitle">Your ideal track is Ruby and Rails</h2>
-          <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
-          </div>
-        </div>
+        <h1 class="resultTitle">Congrats <span class="name"></span>!</h1>
+        <h2 class="resultTitle">You got Ruby and Rails</h2>
+        <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
       </div>
 
       <div id="css">
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-6">
-            <h1 class="resultTitle">Congrats!</h1>
-            <h2 class="resultTitle">Your ideal track is CSS and Design</h2>
-            <img src="img/cssTrack.png" alt="CSS Logo" class="imageSizeLarge"/>
-          </div>
-        </div>
+        <h1 class="resultTitle">Congrats <span class="name"></span>!</h1>
+        <h2 class="resultTitle">You got CSS and Design</h2>
+        <img src="img/cssTrack.png" alt="CSS Logo" class="imageSizeLarge"/>
       </div>
 
       <div id="twoOptions">
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div class="col-md-6">
-            <h1 class="resultTitle">Congrats!</h1>
-            <h2 class="resultTitle">Your ideal tracks are C# and Ruby</h2>
-            <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
-            <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
-          </div>
-        </div>
+        <h1 class="resultTitle">Congrats <span class="name"></span>!</h1>
+        <h2 class="resultTitle">You got C# and Ruby</h2>
+        <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
+        <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
       </div>
 
-      </form>
+    </form>
 
     </div>
   </body>
