@@ -23,6 +23,14 @@
   width: 80%
 }
 
+#introUL {
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    list-style-type: none;
+}
+
+
 h2 {
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
@@ -95,11 +103,4 @@ h3 {
   margin-top: 40px;
   margin-left: 30%
 
-}
-
-#introUL {
-    text-align: center;
-    font-size: 25px;
-    font-family: sans-serif;
-    list-style-type: none;
 }
