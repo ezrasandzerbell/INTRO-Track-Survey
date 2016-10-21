@@ -14,7 +14,7 @@
         <p>Which Programming Language Will Be Best For You?</p>
       </div>
 
-      <p class="introduction">Welcome! This short quiz will take you through a series of questions to evaluate the track at Epicodus that best suits your personality and interests. The following three options are available during Portland's winter semester of 2016/2017. Please review the following questions and answer them to the best of your ability.</p>
+      <p class="introduction">Welcome! This short quiz will take you through a series of questions to evaluate the track at Epicodus that best suits your personality and interests. The following three options are available during Portland's winter semester of 2016/2017:</p>
 
       <div class="row">
 
@@ -25,17 +25,17 @@
 
         <div class="col-md-4">
           <p class="introColumns">CSS/Design</p>
-          <img src="img/cssIcon.jpg" alt="CSS image" class="imageSizeSmall" />
+          <img src="img/cssIcon.png" alt="CSS image" class="imageSizeSmall" />
         </div>
 
         <div class="col-md-4">
-          <p class="introColumns">C#.NET</p>
+          <p class="introColumns">C# / .NET</p>
           <img src="img/cSharpIcon.png" alt="Ruby image" class="imageSizeSmall"/>
         </div>
 
       </div>
 
-      <form id="survey">
+      <form id="survey" class="centerIt">
 
       <h2>What kind of business would you prefer to work for?</h2>
 
@@ -111,51 +111,77 @@
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="codevisual" value="visualDesign">
+          <input type="radio" name="codevisual" value="visualdesign">
           Visual design
         </label>
       </div>
 
       <!-- new question !-->
 
-      <h2>Would you prefer to work on website layout or mobile applications?</h2>
+      <h2>Do you want to work on websites or mobile applications?</h2>
       <div class="radio">
         <label>
-          <input type="radio" name="webmobile" value="webLayout" checked>
+          <input type="radio" name="webmobile" value="weblayout" checked>
           Website layout
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="webmobile" value="mobileApps">
+          <input type="radio" name="webmobile" value="mobileapps">
           Mobile Apps
         </label>
       </div>
 
 <!-- end of questions !-->
 
-      </form>
-
-
-
       <button type="submit" class="btn">Find My Track!</button>
 
       <div id="cSharp">
-        <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-6">
+          <h1 class="resultTitle">Congrats!</h1>
+          <h2 class="resultTitle">Your ideal track is C# and .Net</h2>
+          <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
+          </div>
+        </div>
       </div>
 
       <div id="ruby">
-        <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-6">
+          <h1 class="resultTitle">Congrats!</h1>
+          <h2 class="resultTitle">Your ideal track is Ruby and Rails</h2>
+          <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
+          </div>
+        </div>
       </div>
 
       <div id="css">
-        <img src="img/cssTrack.png" alt="CSS Logo" class="imageSizeLarge"/>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-6">
+            <h1 class="resultTitle">Congrats!</h1>
+            <h2 class="resultTitle">Your ideal track is CSS and Design</h2>
+            <img src="img/cssTrack.png" alt="CSS Logo" class="imageSizeLarge"/>
+          </div>
+        </div>
       </div>
 
       <div id="twoOptions">
-        <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
-        <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-6">
+            <h1 class="resultTitle">Congrats!</h1>
+            <h2 class="resultTitle">Your ideal tracks are C# and Ruby</h2>
+            <img src="img/cSharpTrack.png" alt="C Sharp Logo" class="imageSizeLarge"/>
+            <img src="img/rubyTrack.png" alt="Ruby Logo" class="imageSizeLarge"/>
+          </div>
+        </div>
       </div>
+
+      </form>
 
     </div>
   </body>

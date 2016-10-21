@@ -1,26 +1,54 @@
-#cSharp, #ruby, #css, #twoOptions {
+#cSharp {
   display: none;
 }
 
+#ruby {
+  display: none;
+}
+
+#css {
+  display: none;
+}
+
+#twoOptions {
+  display: none;
+}
+
+.resultTitle {
+  text-align: center;
+}
+
 .imageSizeSmall {
-  width: 250px;
-  margin: 50px 100px 200px;
+  width: 150px;
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 
 .imageSizeLarge {
-  width: 500px;
-  margin: 0 40%;
+  width: 480px;
+  margin-top: 30px;
 }
 
 .introduction {
-  font-size: 20px;
+  font-size: 18px;
   font-family: sans-serif;
+  margin: 30px 30px;
+  text-align: justify;
 }
 
 .introColumns {
   font-size: 30px;
   font-family: sans-serif;
-  margin: 75px 150px 0px;
+  margin: 10px 0px 0px 55px;
+}
+
+.btn {
+  margin-bottom: 100px;
+  margin-left: 35%
+}
+
+.centerIt {
+  margin-left: 150px
 }
 
 #introUL {
