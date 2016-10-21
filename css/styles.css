@@ -1,0 +1,21 @@
+#jarjar, #r2d2, #luke, #sith, #darth, #kylo {
+  display: none;
+}
+
+.imageSize {
+  width: 300px;
+  margin: 0 30%;
+}
+
+.introduction {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 0% 30%;
+}
+
+#introUL {
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    list-style-type: none;
+}
